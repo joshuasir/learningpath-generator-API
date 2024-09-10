@@ -23,7 +23,6 @@ load_dotenv()
 security = HTTPBasic()
 prefix_router = APIRouter(prefix="/api/v1")
 
-# Add the paths to the router instead
 
 app.add_middleware(
     CORSMiddleware,
@@ -72,14 +71,6 @@ def extract_requirement(request: SearchRequest):
 @prefix_router.post("/search_oreilly")
 def search_oreilly(request: SearchRequest):
     return fetch_oreilly(request.query)
-
-@prefix_router.get("/")
-def init():
-    return os.getenv("PASSWORD")
-
-
-def isAuth(username, password):
-    return ((os.getenv("FASTAPI_USERNAME")==username) and (os.getenv("FASTAPI_PASSWORD")==password))
 
 
 app.include_router(prefix_router)

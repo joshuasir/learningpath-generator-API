@@ -9,35 +9,8 @@ import json
 import os
 
 dataset_path = 'hub://josuasirustara/education5'
-# embedding_id = "sentence-transformers/all-MiniLM-L6-v2"
-# repo_id = "HuggingFaceTB/SmolLM-135M"
-# model_id = "mistral.mistral-7b-instruct-v0:2"
 
 QA = None
-#Mean Pooling - Take attention mask into account for correct averaging
-# def mean_pooling(model_output, attention_mask):
-#     token_embeddings = model_output[0] #First element of model_output contains all token embeddings
-#     input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
-#     return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
-
-
-# tokenizer = AutoTokenizer.from_pretrained(embedding_id)
-# model = AutoModel.from_pretrained(embedding_id)
-
-
-# def embedding_function(texts):
-#     if isinstance(texts, str):
-#         texts = [texts]
-#     encoded_input = tokenizer(texts, padding=True, truncation=True, return_tensors='pt')
-
-#     with torch.no_grad():
-#         model_output = model(**encoded_input)
-
-#     sentence_embeddings = mean_pooling(model_output, encoded_input['attention_mask'])
-
-#     sentence_embeddings = F.normalize(sentence_embeddings, p=2, dim=1)
-#     return sentence_embeddings
-
 
 def store_and_embed(contents, chunk_size=1000):
     # Initialize DeepLake vector store

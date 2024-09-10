@@ -3,7 +3,6 @@ from langchain_core.prompts import PromptTemplate
 from langchain_google_vertexai import VertexAI
 import json
 
-model_id = "mistral.mistral-7b-instruct-v0:2"
 
 def extract_info(texts):
     json_object = json.dumps({'job': texts, 'steps':[]}, indent=4)
