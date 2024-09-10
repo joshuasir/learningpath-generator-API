@@ -1,4 +1,4 @@
-# Personalized Learning Plan Using Generative AI
+# Personalized Learning Plan Using Gen AI
 
 **Authors:** Joshua Sirusstara & Kevin Bryan
 **Date:** September 2024
