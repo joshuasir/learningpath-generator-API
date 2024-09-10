@@ -17,7 +17,7 @@ PathEdu hadir dengan tujuan untuk membimbing para pencari kerja, khususnya di bi
 
 Secara garis besar, PathEdu akan menganalisis pekerjaan yang ingin dilamar oleh pengguna, dengan tujuan untuk memfilter dan mengidentifikasi persyaratan yang dibutuhkan, khususnya yang berkaitan dengan hard skill. Setelah tahap ini, PathEdu akan mencari sumber belajar gratis yang sesuai untuk mendukung persiapan pengguna. Berdasarkan informasi yang diberikan oleh pengguna, PathEdu akan memberikan _learning path_ yang unik sesuai minat dan keahlian user.
 
-![image (3)](https://github.com/user-attachments/assets/20813a0b-7636-4e49-b36a-5c04d7cd11a5)
+![image](https://github.com/user-attachments/assets/31f94fc9-708a-41f8-8317-9450662e64b6)
 
 PathEdu menggunakan arsitektur RAG dan memanfaatkan chaining-retrieval question-answering untuk memastikan learning path yang terstruktur dan terarah. Dokumen berisi material pembelajaran dikumpulkan melalui beberapa sumber seperti YouTube, Udemy, Oreilly untuk mendapatkan gambaran konten pembelajaran berupa text. Kemudian kumpulan text diencode menjadi embedding yang disimpan ke vector storage deep lake.
 
