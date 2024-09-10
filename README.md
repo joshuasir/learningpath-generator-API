@@ -19,9 +19,9 @@ Secara garis besar, PathEdu akan menganalisis pekerjaan yang ingin dilamar oleh 
 
 ![image (3)](https://github.com/user-attachments/assets/20813a0b-7636-4e49-b36a-5c04d7cd11a5)
 
-PathEdu menggunakan arsitektur RAG dan memanfaatkan chaining retrieval question answering untuk memastikan learning path yang maksimal. Resource document dikumpulkan melalui beberapa sumber seperti YouTube, Udemy, Oreilly untuk mendapatkan gambaran konten pembelajaran berupa text. Kemudian kumpulan text diencode menjadi embedding yang disimpan ke vector storage deep lake.
+PathEdu menggunakan arsitektur RAG dan memanfaatkan chaining-retrieval question-answering untuk memastikan learning path yang terstruktur dan terarah. Dokumen berisi material pembelajaran dikumpulkan melalui beberapa sumber seperti YouTube, Udemy, Oreilly untuk mendapatkan gambaran konten pembelajaran berupa text. Kemudian kumpulan text diencode menjadi embedding yang disimpan ke vector storage deep lake.
 
-Saat proses question-answer hasil embedding resource ini akan digunakan sebagai referensi menghasilkan step pembelajaran selanjutnya. Jadi metode yang kami gunakan berupa Zero shot learning.
+Saat proses question-answer hasil embedding resource ini akan digunakan sebagai referensi untuk dicantumkan pada step pembelajaran selanjutnya. Step pembelajaran selanjutnya ini dihasilkan secara zero shot berdasarkan pemahaman umum foundation model, prompt tuning dari system, dan augmentasi dari sumber dokumen pembelajaran.
 
 ## Kesimpulan
 
