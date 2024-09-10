@@ -15,13 +15,13 @@ PathEdu hadir dengan tujuan untuk membimbing para pencari kerja, khususnya di bi
 
 ## Metodologi dan Cara Kerja
 
-Secara garis besar, PathEdu akan menganalisis pekerjaan yang ingin dilamar oleh pengguna, dengan tujuan untuk memfilter dan mengidentifikasi persyaratan yang dibutuhkan, khususnya yang berkaitan dengan hard skill. Setelah tahap ini, PathEdu akan mencari sumber belajar gratis yang sesuai untuk mendukung persiapan pengguna. Berdasarkan informasi yang diberikan oleh pengguna, PathEdu akan menyesuaikan sumber daya tersebut dengan tingkat keterampilan pengguna—mulai dari sumber yang ramah untuk pemula hingga yang lebih advanced bagi pengguna yang sudah memiliki keterampilan yang lebih tinggi.
+Secara garis besar, PathEdu akan menganalisis pekerjaan yang ingin dilamar oleh pengguna, dengan tujuan untuk memfilter dan mengidentifikasi persyaratan yang dibutuhkan, khususnya yang berkaitan dengan hard skill. Setelah tahap ini, PathEdu akan mencari sumber belajar gratis yang sesuai untuk mendukung persiapan pengguna. Berdasarkan informasi yang diberikan oleh pengguna, PathEdu akan memberikan _learning path_ yang unik sesuai minat dan keahlian user.
 
 ![image (3)](https://github.com/user-attachments/assets/20813a0b-7636-4e49-b36a-5c04d7cd11a5)
 
 PathEdu menggunakan arsitektur RAG dan memanfaatkan chaining-retrieval question-answering untuk memastikan learning path yang terstruktur dan terarah. Dokumen berisi material pembelajaran dikumpulkan melalui beberapa sumber seperti YouTube, Udemy, Oreilly untuk mendapatkan gambaran konten pembelajaran berupa text. Kemudian kumpulan text diencode menjadi embedding yang disimpan ke vector storage deep lake.
 
-Saat proses question-answer hasil embedding resource ini akan digunakan sebagai referensi untuk dicantumkan pada step pembelajaran selanjutnya. Step pembelajaran selanjutnya ini dihasilkan secara zero shot berdasarkan pemahaman umum foundation model, prompt tuning dari system, dan augmentasi dari sumber dokumen pembelajaran.
+Saat proses question-answer hasil embedding resource ini akan digunakan sebagai referensi untuk dicantumkan pada step pembelajaran selanjutnya. Step pembelajaran selanjutnya ini dihasilkan secara zero shot berdasarkan pemahaman umum foundation model, prompt tuning dari system, dan augmentasi dari sumber dokumen pembelajaran. Step yang dihasilkan berupa beberapa pilihan topic yang dibangun dari respon user mengenai hal yang sudah dipelajari dari tahapan pembalajaran sebelumnya, sehingga mendukung kebebasan user memilih sesuai minat dengan topic yang disesuaikan konteks pemahaman user.
 
 ## Kesimpulan
 
