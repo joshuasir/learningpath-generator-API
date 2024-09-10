@@ -1,4 +1,4 @@
-# Exploring the Pedagogical Impact of Personalized Learning Plan Using Generative AI
+# Personalized Learning Plan Using Generative AI
 
 **Authors:** Joshua Sirusstara & Kevin Bryan
 **Date:** September 2024
